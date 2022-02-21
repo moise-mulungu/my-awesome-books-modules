@@ -1,4 +1,4 @@
-class Book {
+export class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -32,7 +32,7 @@ class Book {
         });
       }
     }
-  
+
     remove(index) {
       this.bookList.splice(index, 1);
       localStorage.setItem('bookList', JSON.stringify(this.bookList));
@@ -47,3 +47,7 @@ document.getElementById('addButton').addEventListener('click', () => {
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
+
+export {
+  add, displayInfo, remove, newBook,
+}

@@ -49,3 +49,6 @@ function homePage() {
 logo.addEventListener('click', homePage);
 
 document.getElementById('time').innerHTML = Date();
+export {
+  list, addNew,contact, logo, addSection, listSection, contactSection, home, homePage,
+}

@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable guard-for-in */
-class Book {
+export class Book {
   constructor(index, title, author) {
     this.index = index;
     this.title = title;
@@ -63,4 +63,8 @@ window.onload = () => {
   for (let i = 0; i < removeButton.length; i += 1) {
     removeButton[i].addEventListener('click', remove);
   }
+};
+
+export {
+  bookShelf, addButton, removeButton, bookList, currentIndex, print, add, displayInfo, remove, 
 };
