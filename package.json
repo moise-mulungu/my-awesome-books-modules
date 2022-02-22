@@ -212,6 +212,7 @@
     "fs-minipass": "^2.1.0",
     "fs.realpath": "^1.0.0",
     "ftp": "^0.3.10",
+    "full-icu": "^1.4.0",
     "function-bind": "^1.1.1",
     "functional-red-black-tree": "^1.0.1",
     "gauge": "^3.0.2",
