@@ -1,11 +1,13 @@
-const list = document.getElementById('list');
-const addNew = document.getElementById('addNew');
-const contact = document.getElementById('contact');
-const logo = document.getElementById('logo');
-const addSection = document.getElementById('addSection');
-const listSection = document.getElementById('listSection');
-const contactSection = document.getElementById('contactSection');
-const home = document.getElementById('homePage');
+import displayCurrentDate from "./date.js";
+
+export const list = document.getElementById('list');
+export const addNew = document.getElementById('addNew');
+export const contact = document.getElementById('contact');
+export const logo = document.getElementById('logo');
+export const addSection = document.getElementById('addSection');
+export const listSection = document.getElementById('listSection');
+export const contactSection = document.getElementById('contactSection');
+export const home = document.getElementById('homePage');
 
 list.addEventListener('click', (event) => {
   addSection.style.display = 'none';
@@ -37,7 +39,7 @@ contact.addEventListener('click', (event) => {
   event.target.style.color = 'rgb(59, 59, 190)';
 });
 
-function homePage() {
+export function homePage() {
   addSection.style.display = 'none';
   listSection.style.display = 'none';
   contactSection.style.display = 'none';
@@ -49,6 +51,3 @@ function homePage() {
 logo.addEventListener('click', homePage);
 
 document.getElementById('time').innerHTML = Date();
-export {
-  list, addNew,contact, logo, addSection, listSection, contactSection, home, homePage,
-}
