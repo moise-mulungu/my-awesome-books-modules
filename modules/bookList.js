@@ -12,13 +12,10 @@ export default class BookList {
       };
       this.bookList.push(newBook);
       localStorage.setItem('bookList', JSON.stringify(this.bookList));
-      // this.bookList = JSON.parse(localStorage.getItem('bookList'));
       this.displayInfo();
     }
   }
 
-  // Check localStorage and if there is any book saved in it, we render it on the page.
-  // This method removed all the content first and then add items afterward.
   displayInfo() {
     if (JSON.parse(localStorage.getItem('bookList'))) {
       this.bookList = JSON.parse(localStorage.getItem('bookList'));
@@ -34,7 +31,7 @@ export default class BookList {
       const removeButtons = document.querySelectorAll('.removeButton');
       removeButtons.forEach((removeButton) => {
         removeButton.addEventListener('click', (event) => {
-          const index = parseInt(event.target.id); // eslint-disable-line
+          const index = parseInt(event.target.id, 10);
           this.remove(index);
         });
       });

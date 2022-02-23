@@ -1,4 +1,4 @@
-import * as navItems from './modules/nav.js'; //eslint-disable-line
+import * as navItems from './modules/nav.js';
 
 import displayCurrentDate from './modules/date.js';
 
