@@ -7,12 +7,12 @@ export default class BookList {
   add(title, author) {
     if (title && author) {
       const newBook = {
-        title: title,
-        author: author
+        title,
+        author,
       };
       this.bookList.push(newBook);
       localStorage.setItem('bookList', JSON.stringify(this.bookList));
-      //this.bookList = JSON.parse(localStorage.getItem('bookList'));
+      // this.bookList = JSON.parse(localStorage.getItem('bookList'));
       this.displayInfo();
     }
   }
@@ -34,10 +34,9 @@ export default class BookList {
       const removeButtons = document.querySelectorAll('.removeButton');
       removeButtons.forEach((removeButton) => {
         removeButton.addEventListener('click', (event) => {
-          // remove the book
-          const index = parseInt(event.target.id)
-          this.remove(index)
-        })
+          const index = parseInt(event.target.id); // eslint-disable-line
+          this.remove(index);
+        });
       });
     }
   }
