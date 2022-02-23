@@ -6,15 +6,6 @@ import BookList from './modules/bookList.js';
 
 const dateContainer = document.getElementById('time');
 
-// import navigation from './modules/navigation.js';
-// navigation ([{
-//   link: '...',
-//   section: '...'
-// },
-// {
-
-// }]);
-
 displayCurrentDate(dateContainer);
 
 const bookList = new BookList();
