@@ -31,7 +31,7 @@ To get a local copy of this app you can use :
 ```
 git clone  https://github.com/moise-mulungu/my-awesome-books-modules
 ```
-this online application is adaptable with all browsers including : Chrome, Firefox , Opera , Safari and IE.
+To make how it works, use live-server from your local.
 
 in this app, you can open three different pages, with an update time which runs perfectly, when you add a book it automatically adds itself on the list.
 
