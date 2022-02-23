@@ -1,10 +1,19 @@
-import * as navItems from './modules/nav.js';
+import { logo, Navigation } from './modules/nav.js';
 
 import displayCurrentDate from './modules/date.js';
 
 import BookList from './modules/bookList.js';
 
 const dateContainer = document.getElementById('time');
+
+// import navigation from './modules/navigation.js';
+// navigation ([{
+//   link: '...',
+//   section: '...'
+// },
+// {
+
+// }]);
 
 displayCurrentDate(dateContainer);
 
@@ -19,3 +28,6 @@ document.getElementById('addButton').addEventListener('click', () => {
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
+const navItems = new Navigation();
+
+logo.addEventListener('click', navItems.homePage);
